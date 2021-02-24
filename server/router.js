@@ -37,4 +37,8 @@ router
   .put(controller.put)
   .delete(controller.delete);
 
+router
+  .route('/shoes')
+  .get(controller.getShoes);
+
 module.exports = router;

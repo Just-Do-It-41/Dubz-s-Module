@@ -32,6 +32,19 @@ const reviewSchema = mongoose.Schema({
   timestamps: true,
 });
 
-const Reviews = mongoose.model('Reviews', reviewSchema);
+const shoePictures = mongoose.Schema({
+  colorway: String,
+  media: [],
+  sizes: [],
+  stock: [],
+  favorite: { type: Boolean, default: false },
+  details: String,
+  style: String,
+  moreBenefits: String,
+});
 
-module.exports = Reviews;
+const Reviews = mongoose.model('Reviews', reviewSchema);
+const Shoes = mongoose.model('ShoePictures', shoePictures);
+
+module.exports.Reviews = Reviews;
+module.exports.Shoes = Shoes;

@@ -2,6 +2,604 @@
 START OF STYLING FOR PARENT DIV
 */
 
+#appFrontPage {
+  display: block;
+}
+
+#frontPage {
+  display: flex;
+  margin: auto;
+  max-width: 1920px;
+}
+
+.leftSideContainer {
+  flex: 3;
+}
+
+.rightSideContainer {
+  flex: 1;
+}
+
+.shoePics {
+  cursor: pointer;
+  display: table;
+  margin-right: 35px;
+  padding-left: 500px;
+}
+
+.highlyRated {
+  cursor: default;
+  font-weight: 500;
+  height: 50px;
+  font-family: "Helvetica Neue";
+  font-size: 20px;
+  line-height: 22px;
+  border-radius: 40px;
+  background: white;
+  margin-top: 40px;
+  margin-left: 30px;
+  padding-left: 20px;
+  padding-right: 30px;
+  padding-top: 15px;
+  position: absolute;
+  align-content: center;
+  width: 190px;
+}
+
+.star {
+  display: inline-block;
+}
+
+.starSVG {
+  padding-bottom: 3px;
+}
+
+.highlyRated span {
+  align-content: center;
+  padding-left: 8px;
+  display: inline-block;
+  position: absolute;
+}
+
+.shoeView {
+  background: transparent;
+  border: none;
+  cursor: pointer;
+  display: inline-block;
+  margin-bottom: 13px;
+  overflow: hidden;
+  padding-right: 10px;
+  padding: 1px 8px;
+  width: 50%;
+}
+
+.pic {
+  max-width: 100%;
+}
+
+.shoeModal {
+  padding: 8px;
+  width: 100%;
+}
+
+.modal {
+  inset: 0px;
+  overflow: auto;
+  position: fixed;
+  padding: 55px 0 55px 0;
+  z-index: 100;
+  background-color: white;
+}
+
+.modalSpan {
+  scroll-margin: -800px;
+  z-index: 1000;
+}
+
+
+.exit {
+  background: 0px 0px;
+  border: none;
+  cursor: pointer;
+  font-family: Arial;
+  font-size: 23px;
+  outline: none;
+  padding: 50px;
+  position: fixed;
+  right: 0px;
+  top: 0px;
+}
+
+/* RIGHT SIDE STARTS HERE */
+.rightWrapper {
+  box-sizing: border-box;
+  display: block;
+  height: 100%;
+  margin-top: 57px;
+  margin-right: 7px;
+  padding-right: 52px;
+  padding-top: 4px;
+}
+
+/* TITLE OF SHOE IS HERE*/
+#shoeTitle {
+  display: flex;
+  margin-bottom: 10px;
+  width: 100%;
+}
+
+.frontPageH2 {
+  display: inline-block;
+  font-family: "Helvetica Neue";
+  font-size: 22px;
+  font-weight: 500;
+  margin-block-end: 0.67em;
+  margin-block-start: 0.4em;
+  margin-inline-end: 0px;
+  margin-inline-start: -3px;
+  max-width: 65%;
+}
+
+.frontPageH1 {
+  display: block;
+  font-family: "Helvetica Neue";
+  font-size: 36px;
+  font-weight: 500;
+  letter-spacing: 0.007em;
+  line-height: 1.2;
+  margin-inline-start: -3px;
+}
+
+.productName {
+  flex: 3 1 0%;
+}
+
+.productPrice {
+  flex: 1 0 auto;
+  margin-top: 20px;
+  text-align: right;
+}
+
+.textPrice {
+  font-family: "Helvetica Neue";
+  font-size: 22px;
+  font-weight: 500;
+  line-height: 1.5;
+  margin-bottom: -4px;
+}
+
+
+/* COLORWAYS ARE HERE */
+.colorways {
+  display: flex;
+  margin-left: 0px;
+  overflow: hidden;
+  padding-right: 4px;
+  position: relative;
+  white-space: normal;
+}
+
+.colorwayWrapper {
+  display: table-cell;
+  flex: 1 1 0%;
+  position: relative;
+}
+
+.colorwayPhotos {
+  border-radius: 5px;
+  max-height:75%;
+  max-width: 100%;
+  min-width: 95%;
+  object-fit: cover;
+}
+
+.colorwayPhotos:hover {
+  border: 1px solid black;
+}
+
+
+/* SIZES ARE HERE */
+.sizesForm {
+  margin-bottom: 24px;
+  margin-top: 10px;
+}
+
+.selectSize {
+  font-family: "Helvetica Neue";
+  font-size: 22px;
+  font-weight: 500;
+  line-height: 1.5;
+  text-align: left;
+}
+
+.sizeGuide {
+  color: #757575;
+  float: right;
+  font-family: "Helvetica Neue";
+  font-size: 22px;
+  font-weight: 500;
+  line-height: 1.5;
+  text-align: left;
+
+}
+
+.sizesContainer {
+  border-radius: 9px;
+  display: grid;
+  gap: 9px;
+  grid-template-columns: repeat(2, 1fr);
+  margin-bottom: 20px;
+  margin-top: 8px;
+  padding: 1px 2px 2px 2px;
+}
+
+.sizeLabels {
+  -webkit-box-align: center;
+  -webkit-box-flex: 1;
+  -webkit-box-pack: center;
+  align-items: center;
+  background: rgb(255, 255, 255);
+  border-radius: 4px;
+  border-radius: 4px;
+  box-shadow: rgb(229, 229, 229) 0px 0px 0px 1px;
+  color: rgb(17, 17, 17);
+  display: flex;
+  flex-grow: 1;
+  font-family: "Helvetica Neue";
+  font-size: 21px;
+  height: 65px;
+  justify-content: center;
+  line-height: 1.75;
+  width: 100%;
+}
+
+.noStock {
+  background-color: rgb(247 247 247);
+  color: rgb(221 221 221);
+}
+
+.inStock:hover {
+  border: 1px solid black;
+  cursor: pointer;
+}
+
+.selectedSize {
+  border: 1px solid black;
+}
+
+.lowStockContainer {
+  padding-bottom: 30px;
+}
+
+.lowStock {
+  color: rgb(186, 134, 30);
+  font-family: "Helvetica Neue";
+  font-size: 22px;
+  font-weight: 500;
+  line-height: 1.5;
+  padding-left: 15px;
+  padding-right: 15px;
+  vertical-align: text-bottom;
+  width: 100%;
+}
+
+.stopWatch {
+  height: 40px;
+  padding-top: 10px;
+  width: 40px;
+}
+
+.addAndFavorite {
+  margin-bottom: 24px;
+  margin-top: 20px;
+}
+
+.addToBag {
+  background-color: black;
+  border-radius: 60px;
+  color: #fff;
+  font-family: "Helvetica Neue";
+  font-size: 22px;
+  font-weight: 500;
+  height: 80px;
+  outline: 0;
+  padding: 18px 24px;
+  width: 100%;
+}
+
+.addToBag:hover {
+  background: rgba(0,0,0,.75);
+  cursor: pointer;
+}
+
+.alert {
+  color: red;
+  font-family: "Helvetica Neue";
+  font-size: 22px;
+  font-weight: 350;
+}
+
+.favorite {
+  background-color: white;
+  border-radius: 60px;
+  border: 1px solid rgb(133, 133, 133);
+  font-family: "Helvetica Neue";
+  font-size: 22px;
+  font-weight: 500;
+  height: 80px;
+  margin-top: 15px;
+  outline: 0;
+  padding: 10px 24px 10px 24px;
+  width: 100%;
+}
+
+.favorite > span {
+  padding-right: 10px;
+}
+
+.favorite:hover {
+  box-shadow: 0 0 2px;
+  cursor: pointer;
+}
+
+.heart {
+  background: transparent;
+  fill: white;
+  height: 30%;
+  stroke: black;
+  stroke-width: 2px;
+}
+
+/* PRODUCT DETAILS HERE */
+.productDetails {
+  font-family: "Helvetica Neue";
+  font-size: 22px;
+  line-height: 1.75;
+  padding-top: 22px;
+}
+
+.detailPreview {
+  font: inherit;
+}
+
+.detailPreviewFeatures {
+  list-style-type: disc;
+  padding: 30px 0 35px 25px;
+}
+
+.viewProductDetails {
+  background: 0 0;
+  border: none;
+  cursor: pointer;
+  display: inline-block;
+  font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
+  font-size: 22px;
+  font-weight: 500;
+  line-height: 1.5;
+  outline: none;
+  padding-bottom: 1px;
+  text-decoration: none;
+}
+
+.viewProductDetails span {
+  border-bottom: 1px solid black;
+}
+
+.viewProductDetails span:hover {
+  box-shadow: 0 3px 3px -3px;
+}
+
+
+.detailsModalContainer {
+  -webkit-box-align: center;
+  -webkit-box-pack: center;
+  align-items: center;
+  background-color: rgba(0, 0, 0, 0.8);
+  border: none;
+  display: flex;
+  height: 100%;
+  inset: 0px;
+  justify-content: center;
+  opacity: 1;
+  position: fixed;
+  top: 0px;
+  width: 100%;
+}
+
+
+.detailsExit {
+  position: fixed;
+  top: 5rem;
+  right: 25rem;
+  font-size: 23px;
+  background: transparent;
+  outline: none;
+  cursor: pointer;
+  border: none;
+  transition-property: none;
+  z-index: 3;
+  transition: none 0s ease 0s;
+  animation-name: fadeIn;
+  animation-duration: 300ms;
+  animation-timing-function: ease;
+  animation-iteration-count: 1;
+  animation-direction: normal;
+  animation-fill-mode: forwards;
+}
+
+@keyframes fadeIn {
+  0% { opacity: 0 }
+  100% { opacity: 1 }
+}
+
+.detailsAnimation {
+  max-width: 1200px;
+  max-height: 92%;
+  position: fixed;
+  left: auto;
+  right: auto;
+  z-index: 2;
+  scroll-behavior: auto;
+  border-radius: 1rem;
+  animation-name: overflowY;
+  animation-duration: 0ms;
+  animation-timing-function: ease;
+  animation-iteration-count: 1;
+  animation-direction: normal;
+  animation-fill-mode: forwards;
+  animation-delay: 3704ms;
+}
+
+@keyframes overflowY {
+  0% { overflow-y: hidden }
+  99% { overflow-y: hidden }
+  100% { overflow-y: auto }
+}
+
+.detailsModal {
+  height: 100%;
+  border-radius: 1rem;
+  background: white;
+  padding: 25px;
+  overflow-y: hidden;
+  z-index: 2;
+  overscroll-behavior: contain;
+  transform: translateY(-10px);
+  animation: 900ms ease 0ms 1 normal forwards running fadeIn, 900ms ease 0ms 1 normal forwards running dropDown;
+}
+
+@keyframes fadeIn {
+  0% { opacity: 0 }
+  100% { opacity: 1 }
+}
+
+@keyFrames dropDown {
+  100% { transform: translateY(0px) }
+}
+
+.modalHeader {
+  height: 110px;
+  padding-bottom: 30px;
+}
+
+.detailsImage {
+  max-width: 105px;
+  max-height: 105px;
+}
+
+.detailsModalImage {
+  display: inline-block;
+}
+
+.detailsModalTitle {
+  display: inline-block;
+  padding-left: 22px;
+  position: absolute;
+}
+
+.detailsShoeName {
+  font-size: 22px;
+  font-family: "Helvetica Neue";
+  padding-top: 28px;
+}
+
+.detailsShoePrice {
+  font-size: 22px;
+  font-family: "Helvetica Neue";
+  padding-top: 13px;
+}
+
+.detailsModalInfo {
+  padding-top: 20px;
+  display: block;
+  height: 75%;
+  overflow: hidden;
+}
+
+.detailsModalInfo p {
+  display: block;
+  margin-block-start: 1em;
+  margin-block-end: 1em;
+  margin-inline-start: 0px;
+  margin-inline-end: 0px;
+  font-size: 22px;
+  font-family: "Helvetica Neue";
+}
+
+.detailsModalInfo .headline {
+  font-weight: 450;
+  margin-bottom: -10px;
+}
+
+.detailsModalInfo p:first-of-type {
+  margin-top: 14px;
+  margin-bottom: 45px;
+}
+
+.detailsModalInfo .regularHeadline {
+  line-height: 1.75;
+}
+
+.headlineContainer {
+  margin-bottom: -40px;
+}
+
+.moreBenefits {
+  margin-top: 15px;
+  padding-left: 25px;
+  height: 100%;
+}
+
+.moreBenefits li {
+  display: list-item;
+  position: relative;
+  font-family: "Helvetica Neue";
+  font-size: 22px;
+  padding-bottom: 10px;
+}
+
+.preScrim {
+  position: fixed;
+  opacity: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 1;
+}
+
+
+@media only screen and (min-width: 1024px) {
+  .mt11-lg {
+    margin-top: 48px;
+  }
+}
+@media only screen and (min-width: 1024px) {
+  .pr12-lg {
+    padding-right: 69px;
+  }
+}
+@media only screen and (min-width: 1024px) {
+  .pl11-lg {
+    padding-left: 63px;;
+  }
+}
+@media only screen and (min-width: 1024px) {
+  .ml1-lg {
+    margin-left: 4px;
+  }
+}
+
+@media only screen and (min-width: 1024px) {
+  .d-lg-ib {
+    display: inline-block;
+  }
+}
+
+@media (max-width: 1440px) {
+  .leftSideContainer {
+    flex: 2;
+  }
+}
+
 @import url(//db.onlinewebfonts.com/c/0f176e527f217797a50cb82e9f62894f?family=TradeGothic);
 
 button {
@@ -48,6 +646,7 @@ button, input[type=button], input[type=reset], input[type=submit] {
 
 .css-15oagn2 {
   width: 100%;
+  display: table;
 }
 
 .accordionTitle {

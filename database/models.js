@@ -1,4 +1,5 @@
-const Reviews = require('./');
+const { Reviews } = require('./index.js');
+const { Shoes } = require('./index.js');
 
 const models = {
   getReviews: () => (
@@ -7,6 +8,10 @@ const models = {
 
   getRecent: () => (
     Reviews.find().sort({ _id: -1 }).limit(3)
+  ),
+
+  getShoes: () => (
+    Shoes.find()
   ),
 
   getUser: (id) => (
