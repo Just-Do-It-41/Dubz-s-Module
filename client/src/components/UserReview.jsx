@@ -110,6 +110,7 @@ class UserReview extends React.Component {
     color: #111;
     text-transform: capitalize;
     font-weight: bold;
+    font-size: 16px;
     `;
     const Comment = styled.div`
     font-size: 14px;
@@ -118,6 +119,7 @@ class UserReview extends React.Component {
     margin-bottom: 0;
     margin-top: 5px;
     word-wrap: break-word;
+    font-size: 16px;
     `;
     const Details = styled.div`
     width: 70%;
@@ -167,17 +169,17 @@ class UserReview extends React.Component {
           </div>
           <div>
             <Details>
-              <div name="address" style={{ display: 'flex', flexDirection: 'row' }}>
+              <div name="address" style={{ display: 'flex', flexDirection: 'row', fontSize: '15px' }}>
                 <div>{moment(review.createdAt).format('LL')} &nbsp; </div>
                 <div style={{ fontWeight: '500', color: '#6D6D6D' }} name="username"> -- {review.username} -- &nbsp; &nbsp; </div>
                 <div> {review.city}, &nbsp; &nbsp;  </div>
                 <div> {review.state},  {review.country} </div>
               </div>
-              <div name="Verified" style={{ color: '#FA5400' }}> Verified Purchaser</div>
+              <div name="Verified" style={{ color: '#FA5400', fontSize: '15px' }}> Verified Purchaser</div>
               <div name="PlayStyle" style={{ display: 'flex', flexDirection: 'row', width: '100%' }}>
-                <div name="playstyle" style={{paddingRight: '3px'}}>I play on: {review.playArea} -- </div>
-                <div name="offense" style={{paddingRight: '3px'}}>My offense style: {review.offenseStyle} -- </div>
-                <div name="defense" style={{paddingRight: '3px'}}>My defense style: {review.defenseStyle}</div>
+                <div name="playstyle" style={{paddingRight: '3px', fontSize: '15px' }}>I play on: {review.playArea} -- </div>
+                <div name="offense" style={{paddingRight: '3px', fontSize: '15px' }}>My offense style: {review.offenseStyle} -- </div>
+                <div name="defense" style={{paddingRight: '3px', fontSize: '15px' }}>My defense style: {review.defenseStyle}</div>
               </div>
             </Details>
           </div>
@@ -191,7 +193,7 @@ class UserReview extends React.Component {
                 <span style={{ fontSize: '14px', position: 'relative', top: '3px' }}>{this.state.upvote}</span>
               </div>
               <div style={{ paddingRight: '23px', display: 'inline-flex' }}>
-                <div name="downvote" className="upvoteArrow" style={{ transform: 'rotate(180deg', position: 'relative', bottom: '1px'}}>
+                <div name="downvote" className="upvoteArrow" style={{ transform: 'rotate(180deg', position: 'relative', bottom: '-1px'}}>
                   <Downvote downVote={this.downVote} />
                 </div>
                 &nbsp;

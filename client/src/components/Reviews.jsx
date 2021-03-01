@@ -140,8 +140,9 @@ class Reviews extends React.Component {
       padding-left: 16px;
       display: flex;
       position: relative;
-      bottom: 14px;
+      bottom: 15px;
       font-family: "Helvetica Neue";
+      font-size: 19px;
     `;
 
     const MoreReviews = styled.a`
@@ -171,6 +172,7 @@ class Reviews extends React.Component {
     padding-left: 0;
     padding-right: 0;
     border-radius: 0;
+    cursor: pointer;
     opacity: ${() => { this.state.hovered === true ? '1' : 'none' }}
     outline-color: ${() => { this.state.hovered === true ? 'initial' : 'none' }}
     outline-style: ${() => { this.state.hovered === true ? 'initial' : 'none' }}

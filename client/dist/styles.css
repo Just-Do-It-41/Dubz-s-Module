@@ -653,7 +653,7 @@ button, input[type=button], input[type=reset], input[type=submit] {
   color: #111111;
   font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
   font-weight: 500;
-  font-size: 20px;
+  font-size: 22px;
   line-height: 1.2;
 }
 
@@ -678,6 +678,8 @@ button, input[type=button], input[type=reset], input[type=submit] {
   width: 25%;
   position: relative;
   top: 40%;
+  bottom: 3px;
+  font-size: 23px;
 }
 
 .accordionCont3 {
@@ -701,6 +703,10 @@ button, input[type=button], input[type=reset], input[type=submit] {
   margin-left: 24px;
   box-shadow: inset 0 -1px 0 0 #E5E5E5;
   /* width: fit-content */
+}
+
+.body-1 {
+  font-size: 23px;
 }
 
 .css-bxtnul {
@@ -797,6 +803,7 @@ START OF STYLING FOR FREE SHIPPING TEXT
   width: 100%;
   display: inline-block;
   font-family: "Helvetica Neue";
+  font-size: 19px;
 }
 
 /*
@@ -1058,7 +1065,7 @@ END OF SLIDER SECTION
 .sortBy {
     appearance: none;
     display: block;
-    font-size: 14px;
+    font-size: 18px;
     padding: 0 20px 0 0;
     width: 100%;
     max-width: 100%;
@@ -1122,8 +1129,8 @@ ADDREVIEWS SECTION
 
 .radioButton {
   padding-right: 10px;
-  font-size: 11px;
-  font-weight: 500;
+  font-size: 15px;
+  font-weight: 400;
 
 }
 .radioSection {
@@ -1172,7 +1179,7 @@ ADDREVIEWS SECTION
   text-align: center;
   letter-spacing: 0.05em;
   font-family: "TradeGothic";
-  font-size: 15px;
+  font-size: 19px;
   margin-top: 12px;
 }
 .writeReviewButton {
@@ -1184,6 +1191,8 @@ ADDREVIEWS SECTION
   padding-right: 0;
   border-radius: 0;
   font-family: "Helvetica Neue";
+  font-size: 19px;
+  font-weight: 500;
 }
 .writeReviewButton:hover {
   box-shadow: inset 0 -2px 0 0 #111;

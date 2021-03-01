@@ -88,7 +88,7 @@ class ReviewsModal extends React.Component {
     margin: 0 auto;
     padding: 0 24px;
     font-family: 'Helvetica Neue',Helvetica,Verdana,Arial,Helvetica,sans-serif;
-    font-size: 12px;
+    font-size: 16px;
     display: flex;
     flex-wrap: wrap;
     `;
@@ -111,7 +111,7 @@ class ReviewsModal extends React.Component {
     // font-family: "Nike TG", Oswald, "Helvetica Neue", Helvetica, Arial, sans-serif;
     const ReviewRating = styled.div`
     font-family: "TradeGothic";
-    font-size: 28px;
+    font-size: 31px;
     text-transform: uppercase;
     letter-spacing: 0.05rem;
     color: #111;
@@ -186,52 +186,52 @@ class ReviewsModal extends React.Component {
               <ShoeContainer>
                 <img src="https://static.nike.com/a/images/t_default/a011143b-3f77-40be-a425-d6e8b64c2006/lebron-18-basketball-shoe-M6DgN2.jpg" className="shoeImage" alt="Lebron 18 header" />
                 <div className="shoePrice">
-                  <h1 style={{marginTop: '3px'}}>Lebron 18</h1>
-                  <div style={{ marginBottom: '-4px', color: '#111111', marginTop: '7px' }}>$200</div>
+                  <h1 style={{ marginTop: '3px', fontFamily: 'Arial', fontSize: '24px', fontWeight: '400' }}>Lebron 18</h1>
+                  <div style={{ marginBottom: '-4px', color: '#111111', marginTop: '7px', fontSize: '19px' }}>$200</div>
                 </div>
               </ShoeContainer>
             </div>
           </ShoeHeader>
-          <button type="button" onClick={this.closePage} style={{ outline: 0, position: 'absolute', top: '12px', right: '12px', paddingTop: '16px', zIndex: 10, background: '#fff', color: '#58595b', fontSize: '18px' }}>
+          <button type="button" onClick={this.closePage} style={{ outline: 0, position: 'absolute', top: '16px', right: '16px', paddingTop: '16px', zIndex: 10, background: '#fff', color: '#58595b', fontSize: '18px' }}>
             <AiOutlineClose />
           </button>
         </Header>
         <Body1 name="Body1">
           <Body2 name="Body2">
             <ReviewSummary1 name="ReviewSummary1">
-              <ReviewStars name="ReviewStars" style={{ fontSize: '22px' }}>
+              <ReviewStars name="ReviewStars" style={{ fontSize: '28px' }}>
                 <StarMap ratings={this.state.totalRatings} />
               </ReviewStars>
               <ReviewRating name="ReviewRating">{this.state.reviews.length} Reviews</ReviewRating>
             </ReviewSummary1>
             <TotalReviews name="TotalReviews">
               <TotalSize name="Size">
-                <div style={{ fontWeight: 'normal', textAlign: 'left', marginBottom: '7px', color: '#111', fontSize: '14px', marginTop: '4px', display: 'flex' }}>Size</div>
+                <div style={{ fontWeight: '400', textAlign: 'left', marginBottom: '7px', color: '#111', fontSize: '18px', marginTop: '4px', display: 'flex' }}>Size</div>
                 <div>{Slider(this.state.totalSize)}</div>
                 <div>
-                  <div style={{ display: 'flex', textAlign: 'left', fontWeight: 'normal', whiteSpace: 'nowrap', color: '#6D6D6D', fontSize: '12px' }}>Runs small</div>
-                  <div style={{ textAlign: 'right', position: 'relative', bottom: 12, fontWeight: 'normal', whiteSpace: 'nowrap', color: '#6D6D6D', fontSize: '12px' }}>Runs Big</div>
+                  <div style={{ display: 'flex', textAlign: 'left', fontWeight: '400', whiteSpace: 'nowrap', color: '#6D6D6D', fontSize: '16px' }}>Runs small</div>
+                  <div style={{ textAlign: 'right', position: 'relative', bottom: '19px', fontWeight: '400', whiteSpace: 'nowrap', color: '#6D6D6D', fontSize: '16px' }}>Runs Big</div>
                 </div>
               </TotalSize>
               <TotalComfort name="Comfort">
-                <div style={{ fontWeight: 'normal', textAlign: 'left', marginBottom: '7px', color: '#111', fontSize: '14px', marginTop: '4px', display: 'flex' }}>Comfort</div>
+                <div style={{ fontWeight: '400', textAlign: 'left', marginBottom: '7px', color: '#111', fontSize: '18px', marginTop: '4px', display: 'flex' }}>Comfort</div>
                 <div>{Slider(this.state.totalComfort)}</div>
                 <div>
-                  <div style={{ display: 'flex', textAlign: 'left', fontWeight: 'normal', whiteSpace: 'nowrap', color: '#6D6D6D', fontSize: '12px' }}>Runs small</div>
-                  <div style={{ textAlign: 'right', position: 'relative', bottom: 12, fontWeight: 'normal', whiteSpace: 'nowrap', color: '#6D6D6D', fontSize: '12px' }}>Runs Big</div>
+                  <div style={{ display: 'flex', textAlign: 'left', fontWeight: '400', whiteSpace: 'nowrap', color: '#6D6D6D', fontSize: '16px' }}>Runs small</div>
+                  <div style={{ textAlign: 'right', position: 'relative', bottom: '19px', fontWeight: '400', whiteSpace: 'nowrap', color: '#6D6D6D', fontSize: '16px' }}>Runs Big</div>
                 </div>
               </TotalComfort>
               <TotalDurability name="Durability">
-                <div style={{ fontWeight: 'normal', textAlign: 'left', marginBottom: '7px', color: '#111', fontSize: '14px', marginTop: '4px', display: 'flex' }}>Durability</div>
+                <div style={{ fontWeight: '400', textAlign: 'left', marginBottom: '7px', color: '#111', fontSize: '18px', marginTop: '4px', display: 'flex' }}>Durability</div>
                 <div>{Slider(this.state.totalDurability)}</div>
                 <div>
-                  <div style={{ display: 'flex', textAlign: 'left', fontWeight: 'normal', whiteSpace: 'nowrap', color: '#6D6D6D', fontSize: '12px' }}>Runs small</div>
-                  <div style={{ textAlign: 'right', position: 'relative', bottom: 12, fontWeight: 'normal', whiteSpace: 'nowrap', color: '#6D6D6D', fontSize: '12px' }}>Runs Big</div>
+                  <div style={{ display: 'flex', textAlign: 'left', fontWeight: '400', whiteSpace: 'nowrap', color: '#6D6D6D', fontSize: '16px' }}>Runs small</div>
+                  <div style={{ textAlign: 'right', position: 'relative', bottom: '19px', fontWeight: '400', whiteSpace: 'nowrap', color: '#6D6D6D', fontSize: '16px' }}>Runs Big</div>
                 </div>
               </TotalDurability>
             </TotalReviews>
             <SortBy>
-              <div style={{ textAlign: 'left', float: 'left', position: 'relative' }}>
+              <div style={{ textAlign: 'left', float: 'left', position: 'relative', fontSize: '19px' }}>
                 <select className="sortBy" onChange={this.props.getData}>
                   <option>Sort: </option>
                   <option value="helpful10">Sort by: Most Helpful</option>

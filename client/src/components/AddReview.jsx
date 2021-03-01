@@ -75,7 +75,7 @@ class AddReview extends React.Component {
     height: 90% !important;
     left: 20% !important;
     font-family: 'Helvetica Neue',Helvetica,Verdana,Arial,Helvetica,sans-serif;
-    font-size: 12px;
+    font-size: 18px;
     font-weight: 400;
     color: #58595b;
     line-height: 1.2;
@@ -137,7 +137,7 @@ class AddReview extends React.Component {
     display: block;
     width: 100%;
     margin-bottom: 18px;
-    font-size: 14px;
+    font-size: 17px;
     font-weight: normal;
     color: #111;
     float: left;
@@ -160,7 +160,7 @@ class AddReview extends React.Component {
     `;
     const Title = styled.div`
     width: 33.33%;
-    font-size: 14px;
+    font-size: 17px;
     font-weight: normal;
     color: #111;
     float: left;
@@ -169,7 +169,7 @@ class AddReview extends React.Component {
     min-height: 43px;
     padding: 18px;
     width: 100%;
-    font-size: 13px;
+    font-size: 15px;
     line-height: 23px;
     resize: vertical;
     background: #FFF;
@@ -196,12 +196,12 @@ class AddReview extends React.Component {
                 <div name="WriteAReview" style={{ display: 'block' }}>
                   <div className="writeReview">
                     WRITE A REVIEW
-                    <p style={{ marginBottom: '8px', fontFamily: 'Helvetica Neue', fontSize: '14px', color: '#8D8D8D', letterSpacing: 'normal', marginBlockStart: '0em', fontWeight: 400 }}>Please share your experience</p>
+                    <p style={{ marginBottom: '8px', fontFamily: 'Helvetica Neue', fontSize: '17px', color: '#8D8D8D', letterSpacing: 'normal', marginBlockStart: '0em', fontWeight: 400 }}>Please share your experience</p>
                   </div>
                 </div>
                 <OverallRating name="Overall rating">
-                  <div style={{ display: 'flex', flexDirection: 'row', width: '100%' }}>
-                    <div style={{ fontSize: '14px', width: '33.33%', color: '#111', fontWeight: 'normal', textAlign: 'left' }}>
+                  <div style={{ display: 'flex', flexDirection: 'row', width: '100%', fontSize: '16px' }}>
+                    <div style={{ fontSize: '17px', width: '33.33%', color: '#111', fontWeight: 'normal', textAlign: 'left' }}>
                       Overall rating:
                     <span style={{ color: 'red' }}> &nbsp; *</span>
                     </div>
@@ -355,7 +355,7 @@ class AddReview extends React.Component {
                   </div>
                 </ReviewInput>
               </div>
-              <div style={{ textAlign: 'center', fontSize: '11px', color: '#8D8D8D' }}>
+              <div style={{ textAlign: 'center', fontSize: '13px', color: '#8D8D8D' }}>
                 I understand my rating and review may appear publicly as a Nike Verified Purchase and data I provide may appear with my public review. By clicking Submit, I agree to <u><b>Privacy Policy</b></u>, <u><b>Terms of Use</b></u>, and <u><b>Terms of Service</b></u>.
               </div>
               <button className="submitReview" value="Submit" onClick={this.handleSubmit}>SUBMIT</button>

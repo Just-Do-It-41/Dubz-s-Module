@@ -44,7 +44,7 @@ class ReviewInstance extends React.Component {
     const Title = styled.div`
     font-weight: 500;
     font-family: Helvetica Neue;
-    font-size: 16px;
+    font-size: 19px;
     line-height: 1.5;
     display: block;
     margin-bottom: 6px;
@@ -83,15 +83,15 @@ class ReviewInstance extends React.Component {
               {this.props.reviews.reviewTitle}
             </Title>
           </TitleContainer>
-          <div style={{display: 'flex', flexDirection: 'row'}}>
-              <StarMap ratings={this.props.reviews.overallRating}/>
+          <div style={{display: 'flex', flexDirection: 'row', fontSize: '19px'}}>
+              <StarMap name="StarMap" ratings={this.props.reviews.overallRating}/>
             <Date>
               {this.props.reviews.username} - {moment(this.props.reviews.createdAt).format('ll')}
             </Date>
             </div>
             <ReviewContainer2>
             </ReviewContainer2>
-          <Comments style={{fontFamily: "Helvetica Neue"}}>{this.props.reviews.review}</Comments>
+          <Comments style={{fontFamily: 'Helvetica Neue', fontSize: '19px'}}>{this.props.reviews.review}</Comments>
         </ReviewContainer2>
       </ReviewContainer1>
     );
